@@ -1,0 +1,1 @@
+{"users":[{"username":"matheus.bernardes","password":"$2a$11$ATipSzpjGDhImnPFqE2YkOYlF3I9CtkgUwPU\/Xnl9lo7ufypMihDy"},{"username":"matheus.bernardes","password":"$2a$11$g39AxyiRJTA2KZTW0JPtW.hKmqDJmAi7vkoOUH71MxmS6sm3f2t5i"}]}

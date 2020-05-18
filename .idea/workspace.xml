@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cfd48b3a-ab72-41d5-9ec8-2148d0f89433" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="clj-owasp-master" />
+  </component>
+  <component name="ProjectId" id="1YMGYF3hy3ZFsGl9JlLRbx0jSmM" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/clj_owasp_master" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/clj_owasp_master" />
+    </key>
+  </component>
+  <component name="ReplState" timestamp="1589498927699">{:repl-history {:ide [], :local [{:command &quot;(+\n  5\n  5)&quot;, :offset 11, :ns &quot;clj-owasp-master.core&quot;} {:command &quot;(require clj_owasp_master.main)&quot;, :offset 31, :ns &quot;clj-owasp-master.core&quot;} {:command &quot;(use '[clojure.java.shell :only [sh]])\n\n(def key-path \&quot;/tmp/a1/\&quot;)\n\n(defn generate-rsa-key [{:keys [key-name]}]\n  (let [key (str key-path key-name)\n        command (str \&quot;openssl genrsa -out \&quot; key \&quot; 2048\&quot;)]\n    (sh \&quot;bash\&quot; \&quot;-c\&quot; command)))\n&quot;, :offset 236, :ns &quot;clj-owasp-master.core&quot;} {:command &quot;(generate-rsa-key {:key-name \&quot;certificate\&quot;})\n&quot;, :offset 45, :ns &quot;clj-owasp-master.core&quot;} {:command &quot;(generate-rsa-key {:key-name\&quot;; ls / #\&quot;})&quot;, :offset 40, :ns &quot;clj-owasp-master.core&quot;} {:command &quot;\n(defn generate-rsa-key [{:keys [key-name]}]\n  (let [key (str key-path key-name)\n        command (str \&quot;openssl genrsa -out \&quot; key \&quot; 2048\&quot;)]\n    (make-parents key-path)\n    (sh \&quot;bash\&quot; \&quot;-c\&quot; command)))\n\n(generate-rsa-key {:key-name \&quot;certificate\&quot;})\n\n&quot;, :offset 245, :ns &quot;clj-owasp-master.core&quot;} {:command &quot;\n(use '[clojure.java.shell :only [sh]\n       clojure.java.io :only [make-parents]])\n\n(def key-path \&quot;/tmp/a1/\&quot;)\n\n(defn generate-rsa-key [{:keys [key-name]}]\n  (let [key (str key-path key-name)\n        command (str \&quot;openssl genrsa -out \&quot; key \&quot; 2048\&quot;)]\n    (make-parents key-path)\n    (sh \&quot;bash\&quot; \&quot;-c\&quot; command)))\n\n(generate-rsa-key {:key-name \&quot;certificate\&quot;})\n\n\n&quot;, :offset 357, :ns &quot;clj-owasp-master.core&quot;} {:command &quot;(use '[clojure.java.shell :only [sh]\n       clojure.java.io :only [make-parents]])\n&quot;, :offset 83, :ns &quot;clj-owasp-master.core&quot;} {:command &quot;(def key-path \&quot;/tmp/a1/\&quot;)&quot;, :offset 25, :ns &quot;clj_owasp_master.main&quot;} {:command &quot;(defn generate-rsa-key [{:keys [key-name]}]\n      (let [key (str key-path key-name)\n            command (str \&quot;openssl genrsa -out \&quot; key \&quot; 2048\&quot;)]\n          (make-parents key-path)\n           (sh \&quot;bash\&quot; \&quot;-c\&quot; command)))&quot;, :offset 217, :ns &quot;clj_owasp_master.main&quot;} {:command &quot;(defn generate-rsa-key [{:keys [key-name]}]\n      (let [key (str key-path key-name)\n            dir (make-parents key)\n            command (str \&quot;openssl genrsa -out \&quot; key \&quot; 2048\&quot;)]\n           (sh \&quot;bash\&quot; \&quot;-c\&quot; command)))&quot;, :offset 218, :ns &quot;clj_owasp_master.main&quot;} {:command &quot;(generate-rsa-key {:key-name \&quot;certificate\&quot;})&quot;, :offset 44, :ns &quot;clj_owasp_master.main&quot;} {:command &quot;(generate-rsa-key {:key-name \&quot;; ls #\&quot;})&quot;, :offset 39, :ns &quot;clj_owasp_master.main&quot;} {:command &quot;(run-cluster {:key-name \&quot;&amp; ls / #\&quot;})&quot;, :offset 36, :ns &quot;clj_owasp_master.main&quot;} {:command &quot;(run-cluster {:key-name \&quot;| ls / #\&quot;})&quot;, :offset 36, :ns &quot;clj_owasp_master.main&quot;} {:command &quot;(run-cluster {:key-name \&quot;; ls / #\&quot;})&quot;, :offset 36, :ns &quot;clj_owasp_master.main&quot;} {:command &quot;(defn run-cluster [config-file]\n  (let [command (str \&quot;/bin/kafka \&quot; config-file)]\n    (sh \&quot;bash\&quot; \&quot;-c\&quot; command)))&quot;, :offset 111, :ns &quot;clj_owasp_master.main&quot;} {:command &quot;(defn login [username password]\n  (let [sql (str \&quot;select * from Users where username='\&quot; username \&quot;' and password='\&quot; password \&quot;'\&quot;)]\n    (print sql)))&quot;, :offset 148, :ns &quot;clj_owasp_master.main&quot;} {:command &quot;(login \&quot;guilherme\&quot; \&quot;senha\&quot;)&quot;, :offset 27, :ns &quot;clj_owasp_master.main&quot;} {:command &quot;(login \&quot;guilherme\&quot; \&quot;' or id=1 having '1'='1\&quot;)&quot;, :offset 45, :ns &quot;clj_owasp_master.main&quot;} {:command &quot;(login \&quot;guilherme\&quot; \&quot;' or admin=1 having '1'='1\&quot;)&quot;, :offset 48, :ns &quot;clj_owasp_master.main&quot;} {:command &quot;(defn is-common? [key]\n  (contains? common-passwords key))&quot;, :offset 58, :ns &quot;clj_owasp_master.a2&quot;} {:command &quot;common-passwords&quot;, :offset 16, :ns &quot;clj_owasp_master.a2&quot;} {:command &quot;(print common-passwords)&quot;, :offset 24, :ns &quot;clj_owasp_master.a2&quot;} {:command &quot;(is-common? \&quot;gui\&quot;)&quot;, :offset 18, :ns &quot;clj_owasp_master.a2&quot;} {:command &quot;(is-common? \&quot;guigui\&quot;)&quot;, :offset 21, :ns &quot;clj_owasp_master.a2&quot;} {:command &quot;(defn register-new-user! [username password]\n  (add :users {:username username :password password}))&quot;, :offset 100, :ns &quot;clj_owasp_master.a2&quot;} {:command &quot;(defn register-new-user! [username password]\n  (if (is-common? password)\n    (throw \&quot;Unable\&quot;)\n    (add :users {:username username :password password})))&quot;, :offset 152, :ns &quot;clj_owasp_master.a2&quot;} {:command &quot;(defn register-new-user! [username password]\n  (if (is-common? password)\n    (throw (Exception. \&quot;Unable\&quot;))\n    (add :users {:username username :password password})))&quot;, :offset 165, :ns &quot;clj_owasp_master.a2&quot;} {:command &quot;(register-new-user! \&quot;matheus.bernardes\&quot; \&quot;gui\&quot;)&quot;, :offset 46, :ns &quot;clj_owasp_master.a2&quot;} {:command &quot;(defn register-new-user! [username password]\n  (let [encoded-password (password/encrypt password)]\n    (if (is-common? password)\n      (throw (Exception. \&quot;Unable\&quot;))\n      (add :users {:username username :password encoded-password}))))&quot;, :offset 234, :ns &quot;clj_owasp_master.a2&quot;} {:command &quot;(defn register-new-user! [username pwd]\n  (let [encoded-password (password/encrypt pwd)]\n    (if (is-common? password)\n      (throw (Exception. \&quot;Unable\&quot;))\n      (add :users {:username username :password encoded-password}))))&quot;, :offset 224, :ns &quot;clj_owasp_master.a2&quot;} {:command &quot;(defn register-new-user! [username pwd]\n  (let [encoded-password (password/encrypt pwd)]\n    (if (is-common? pwd)\n      (throw (Exception. \&quot;Unable\&quot;))\n      (add :users {:username username :password encoded-password}))))&quot;, :offset 219, :ns &quot;clj_owasp_master.a2&quot;} {:command &quot;(defn register-new-user! [username pwd]\n  (let [encoded-password (password/encrypt pwd)]\n    (if (is-common? pwd)\n      (throw (Exception. \&quot;Unable\&quot;))\n      (add :users {:username username :password pwd}))))&quot;, :offset 206, :ns &quot;clj_owasp_master.a2&quot;} {:command &quot;(ns clj_owasp_master.a2\n  (:use clojure.java.io)\n  (:require [crypto.password.bcrypt]))&quot;, :offset 87, :ns &quot;clj_owasp_master.a2&quot;} {:command &quot;(ns clj_owasp_master.a2\n  (:use clojure.java.io)\n  (:require [crypto.password.bcrypt as :password]))&quot;, :offset 100, :ns &quot;clj_owasp_master.a2&quot;} {:command &quot;(ns clj_owasp_master.a2\n  (:use clojure.java.io)\n  (:require [crypto.password.bcrypt :as password]))&quot;, :offset 100, :ns &quot;clj_owasp_master.a2&quot;} {:command &quot;(defn register-new-user! [username pwd]\n  (let [e-pwd (password/encrypt pwd)]\n    (if (is-common? pwd)\n      (throw (Exception. \&quot;Unable\&quot;))\n      (add :users {:username username :password e-pwd}))))&quot;, :offset 197, :ns &quot;clj_owasp_master.a2&quot;} {:command &quot;(def encrypted (password/encrypt \&quot;foobar\&quot;))&quot;, :offset 43, :ns &quot;clj_owasp_master.a2&quot;} {:command &quot;(password/check \&quot;foobar\&quot; encrypted)&quot;, :offset 35, :ns &quot;clj_owasp_master.a2&quot;} {:command &quot;(defn add [table doc]\n      (swap! my-db update-in [table] conj doc)\n      )\n&quot;, :offset 77, :ns &quot;clj_owasp_master.a3&quot;} {:command &quot;(json/write-str my-db)&quot;, :offset 22, :ns &quot;clj_owasp_master.a3&quot;} {:command &quot;(defn add [table doc]\n  (swap! my-db update-in [table] conj doc)\n  (spit \&quot;pass.txt\&quot; (json/write-str my-db))\n  )&quot;, :offset 111, :ns &quot;clj_owasp_master.a3&quot;} {:command &quot;(defn add [table doc]\n  (swap! my-db update-in [table] conj doc)\n  (spit \&quot;pass.txt\&quot; (json/write-str @my-db))\n  )&quot;, :offset 112, :ns &quot;clj_owasp_master.a3&quot;} {:command &quot;(register-new-user! \&quot;matheus.bernardes\&quot; \&quot;banana\&quot;)&quot;, :offset 49, :ns &quot;clj_owasp_master.a3&quot;}], :remote []}}</component>
+  <component name="RunManager" selected="Clojure REPL.Unnamed">
+    <configuration name="Unnamed" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false" nameIsGenerated="true">
+      <module name="clj-owasp-master" />
+      <setting name="replType" value="NREPL" />
+      <setting name="execution" value="LEININGEN" />
+      <setting name="jvmArgs" value="" />
+      <setting name="parameters" value="" />
+      <setting name="workingDir" value="$PROJECT_DIR$" />
+      <setting name="profiles" value="" />
+      <setting name="aliases" value="" />
+      <setting name="fixLineNumbers" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
+      <setting name="replType" value="NREPL" />
+      <setting name="execution" value="LEININGEN" />
+      <module name="" />
+      <setting name="jvmArgs" value="" />
+      <setting name="parameters" value="" />
+      <setting name="workingDir" value="" />
+      <setting name="profiles" value="" />
+      <setting name="aliases" value="" />
+      <setting name="fixLineNumbers" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="ClojureREPL" factoryName="Remote" activateToolWindowBeforeRun="false">
+      <setting name="host" value="" />
+      <setting name="port" value="0" />
+      <setting name="replType" value="SOCKET" />
+      <setting name="configType" value="SPECIFY" />
+      <setting name="fixLineNumbers" value="false" />
+      <module name="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="core" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
+      <module name="clj-owasp-master" />
+      <setting name="path" value="$PROJECT_DIR$/src/clj_owasp_master/core.clj" />
+      <setting name="namespace" value="" />
+      <setting name="execution" value="INTELLIJ" />
+      <setting name="profiles" value="" />
+      <setting name="aliases" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="$PROJECT_DIR$/src/clj_owasp_master" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cfd48b3a-ab72-41d5-9ec8-2148d0f89433" name="Default Changelist" comment="" />
+      <created>1582745094591</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582745094591</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="184" y="118" width="1095" height="686" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582745156840">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="184" y="118" width="1095" height="686" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877@0.23.1440.877" timestamp="1582745156840" />
+    <state x="186" y="69" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1582745525231">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="186" y="69" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.23.1440.877@0.23.1440.877" timestamp="1582745525231" />
+    <state width="1388" height="217" key="GridCell.Tab.0.bottom" timestamp="1582745204226">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1388" height="217" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1582745204226" />
+    <state width="1388" height="217" key="GridCell.Tab.0.center" timestamp="1582745204225">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1388" height="217" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1582745204225" />
+    <state width="1388" height="217" key="GridCell.Tab.0.left" timestamp="1582745204224">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1388" height="217" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1582745204224" />
+    <state width="1388" height="217" key="GridCell.Tab.0.right" timestamp="1582745204226">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1388" height="217" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1582745204226" />
+    <state x="208" y="153" key="IDE.errors.dialog" timestamp="1582745170229">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="208" y="153" key="IDE.errors.dialog/0.23.1440.877@0.23.1440.877" timestamp="1582745170229" />
+    <state x="0" y="23" width="1244" height="877" key="SettingsEditor" timestamp="1589303076835">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="0" y="23" width="1244" height="877" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1589303076835" />
+    <state x="267" y="23" width="905" height="877" key="search.everywhere.popup" timestamp="1589303436230">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="267" y="23" width="905" height="877" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1589303436230" />
+  </component>
+</project>
